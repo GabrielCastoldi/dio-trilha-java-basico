@@ -1,0 +1,79 @@
+Modificadores de Acesso
+
+private: Esse modificador é usado para restringir o acesso a membros (variáveis e métodos) de uma classe.
+Quando um membro é declarado como private, ele só pode ser acessado dentro da própria classe em que foi
+definido. Ou seja, não é visível para outras classes.
+
+protected: O modificador protected permite que um membro seja acessado por classes no mesmo pacote (ou módulo) e
+também por subclasses (mesmo que estejam em pacotes diferentes). Ele oferece um nível intermediário de visibilidade.
+
+public: Essa é a palavra-chave mais aberta. Quando um membro é declarado como public, ele pode ser acessado de
+qualquer classe, independentemente do pacote em que se encontra.
+
+
+Modificadores de Classes, Variáveis ou Métodos
+
+abstract: Uma classe abstrata não pode ser instanciada diretamente. Ela serve como um modelo para outras
+classes (subclasses) que a estendem. Além disso, métodos abstratos (aqueles declarados com abstract) não
+têm implementação na classe abstrata e devem ser implementados pelas subclasses.
+
+class: Quando usamos class, estamos criando uma nova classe em nosso programa. As classes são a base da
+orientação a objetos em Java, permitindo que organizemos nosso código em unidades lógicas e reutilizáveis.
+
+extends: Quando uma classe herda de outra, usamos extends para indicar a superclasse da qual a subclasse está
+estendendo. A herança permite que a subclasse herde atributos e métodos da superclasse.
+
+final: O modificador final tem algumas aplicações importantes:
+Quando aplicado a uma classe, impede que ela seja estendida (ou seja, não pode ter subclasses).
+Quando aplicado a um método, indica que esse método não pode ser sobrescrito por subclasses.
+Quando aplicado a uma variável, torna essa variável constante (ou seja, seu valor não pode ser alterado após a inicialização).
+
+implements: Usado para indicar que uma classe está implementando uma ou mais interfaces. As interfaces
+especificam um conjunto de métodos que a classe deve fornecer.
+
+interface: Define um contrato que outras classes devem seguir. Uma interface pode conter apenas métodos
+abstratos (sem implementação) e constantes (variáveis finais). As classes que implementam uma interface devem fornecer
+a implementação desses métodos.
+
+native: Essa palavra-chave é usada em métodos que são implementados em código nativo (geralmente em C ou C++).
+Esses métodos permitem interações com recursos de baixo nível do sistema operacional.
+
+new: Quando usamos new, estamos criando uma nova instância de uma classe, ou seja, estamos criando um objeto.
+
+static: Quando aplicado a um método ou variável, indica que eles pertencem à classe em vez de a instâncias individuais dessa
+classe. Métodos estáticos podem ser chamados diretamente na classe, sem a necessidade de criar um objeto.
+
+strictfp: Usado em frente a um método ou classe para garantir que os cálculos de ponto flutuante sigam as regras específicas
+da IEEE 754 em todas as plataformas.
+
+synchronized: Indica que um método só pode ser acessado por uma thread de cada vez. É usado para garantir a sincronização
+em ambientes multithread.
+
+transient: Impede que uma variável seja serializada (ou seja, gravada em um arquivo ou transmitida pela rede).
+
+volatile: Indica que uma variável pode ser alterada por várias threads e que as operações de leitura e gravação devem ser
+feitas diretamente na memória principal.
+
+
+Tratamento de Erros
+
+assert: A palavra-chave assert é usada para testar uma expressão condicional e verificar uma suposição do programador.
+Se a expressão for falsa, uma exceção AssertionError é lançada. Normalmente, os asserts são usados para verificar invariantes
+ou condições que devem ser verdadeiras durante a execução do programa.
+
+catch: O bloco catch é usado em conjunto com o try. Quando uma exceção é lançada dentro do bloco try, o código dentro do bloco
+catch é executado. É onde tratamos a exceção, seja exibindo uma mensagem de erro, registrando informações relevantes ou tomando
+outras ações apropriadas.
+
+finally: O bloco finally é usado em conjunto com o try. Ele contém código que será executado independentemente de ter ocorrido
+ou não uma exceção dentro do bloco try. É útil para liberar recursos (como fechar arquivos ou conexões de banco de dados) ou
+para garantir que determinadas ações sejam realizadas, independentemente do fluxo normal ou excepcional do programa.
+
+throw: A palavra-chave throw é usada para lançar manualmente uma exceção. Podemos criar nossas próprias exceções personalizadas
+ou lançar exceções padrão do Java (como NullPointerException ou IllegalArgumentException).
+
+throws: A declaração throws é usada na assinatura de um método para indicar que esse método pode lançar uma ou mais exceções
+verificadas. Quem chamar esse método deve lidar com essas exceções ou propagá-las para cima na pilha de chamadas.
+
+try: O bloco try é usado para envolver o código que pode lançar exceções. Dentro do try, colocamos o código que queremos
+monitorar quanto a possíveis exceções. Se uma exceção ocorrer, o fluxo de execução é transferido para o bloco catch correspondente.
