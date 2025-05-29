@@ -40,7 +40,6 @@ Por favor, digite o saldo da conta:
 1500.75
 Olá Gabriel Castoldi, obrigado por criar uma conta em nosso banco. Sua agência é 1234-5, conta 9876 e seu saldo 1500.75 já esta disponível para saque!
 
-
 ## Tecnologias utilizadas
 
 * Java
