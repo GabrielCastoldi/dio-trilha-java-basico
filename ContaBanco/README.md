@@ -29,3 +29,22 @@ Para executar este programa, você precisará ter o Java Development Kit (JDK) i
     O programa então solicitará que você insira as informações da conta passo a passo.
 
 ## Exemplo de interação
+
+Por favor, digite o número do cliente:
+Gabriel Castoldi
+Por favor, digite o número da agência:
+1234-5
+Por favor, digite o número da conta:
+9876
+Por favor, digite o saldo da conta:
+1500.75
+Olá Gabriel Castoldi, obrigado por criar uma conta em nosso banco. Sua agência é 1234-5, conta 9876 e seu saldo 1500.75 já esta disponível para saque!
+
+
+## Tecnologias utilizadas
+
+* Java
+
+## Autor
+
+Gabriel Castoldi
